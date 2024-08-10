@@ -132,7 +132,7 @@ const EducationCard = ({ education }) => {
     return (
         <Card>
             <Top>
-                <Image src={education.img} />
+               
                 <Body>
                     <Name>{education.school}</Name>
                     <Degree>{education.degree}</Degree>
@@ -140,9 +140,7 @@ const EducationCard = ({ education }) => {
                 </Body>
             </Top>
             <Grade><b>Grade: </b>{education.grade}</Grade>
-            <Description>
-                <Span>{education.desc}</Span>
-            </Description>
+            
         </Card>
     )
 }

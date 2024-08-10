@@ -157,7 +157,7 @@ const ExperienceCard = ({ experience }) => {
             </Top>
             <Description>
                 {experience?.desc &&
-                    <Span>{experience?.desc}</Span>
+                    <p>{experience?.desc}</p>
 
                 }
                 {experience?.skills &&
@@ -174,11 +174,7 @@ const ExperienceCard = ({ experience }) => {
                     </>
                 }
             </Description>
-            {experience.doc &&
-                <a href={experience.doc} target="new">
-                    <Document src={experience.doc} />
-                </a>
-            }
+           
         </Card>
     )
 }
